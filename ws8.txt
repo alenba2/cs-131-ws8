@@ -1,0 +1,32 @@
+Script started on 2022-10-29 14:20:53-04:00
+kallen@sjsu:~\[allen@sjsu ~]$ awk -F"\t" '($12 == "Y"){print $0}' amazon_reviews_us_Books_v1_02.tsv > verified.txt
+kallen@sjsu:~\[allen@sjsu ~]$ awk -F"\t" '($12 == "Y"){print $0}' amazon_reviews_us_Books_v1_02.tsv > verified.txtuverified.txtnverified.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1@N
+kallen@sjsu:~\[allen@sjsu ~]$ awk -F"\t" '($12 == "N"){print $0}' amazon_reviews_us_Books_v1_02.tsv > unverified.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kawk -F"\t" '{print $14}' verified.txt > verified.[KWo[K[KBody.txt
+kallen@sjsu:~\[allen@sjsu ~]$ awk -F"\t" '{print $14}' verified.txt > verifiedBody.txt[1@u[1@n[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CuverifiedBody.txtnverifiedBody.txt
+kallen@sjsu:~\[allen@sjsu ~]$ nano [K[K[K[K[Kcat verifiedBody.txt | tr ' ' '\n' | sort | uniq -c | sort -nr -k 1 | head -10[K1
+1915334 the
+1174155 
+1144030 of
+1123576 and
+ 996304 to
+ 927428 a
+ 667158 is
+ 587726 in
+ 548485 I
+ 443736 that
+ 385755 this
+kallen@sjsu:~\[allen@sjsu ~]$ cat verifiedBody.txt | tr ' ' '\n' | sort | uniq -c | sort -nr -k 1 | head -11[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@u[1@n
+21213471 the
+15154475 
+12850073 and
+12496514 of
+11318755 to
+10576355 a
+7524434 is
+6520795 in
+6338092 I
+5006725 that
+4301530 this
+kallen@sjsu:~\[allen@sjsu ~]$ [K[allen@sjsu ~]$ hh[K[Kexit
+
+Script done on 2022-10-29 19:42:48-04:00
